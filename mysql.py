@@ -20,6 +20,7 @@
 # Requires "MySQLdb" for Python
 #
 # Author: Chris Boulton <chris@chrisboulton.com>
+# Added new status variables: Thierry Laurier <mysolo@cynetek.com>
 # License: MIT (http://www.opensource.org/licenses/mit-license.php)
 #
 
@@ -43,10 +44,17 @@ MYSQL_STATUS_VARS = {
 	'Binlog_cache_use': 'counter',
 	'Bytes_received': 'counter',
 	'Bytes_sent': 'counter',
+	'Connection_errors_accept': 'counter',
+	'Connection_errors_internal': 'counter',
+	'Connection_errors_max_connections': 'counter',
+	'Connection_errors_peer_address': 'counter',
+	'Connection_errors_select': 'counter',
+	'Connection_errors_tcpwrap': 'counter',
 	'Connections': 'counter',
 	'Created_tmp_disk_tables': 'counter',
 	'Created_tmp_files': 'counter',
 	'Created_tmp_tables': 'counter',
+	'Delete_scan': 'counter',
 	'Innodb_buffer_pool_pages_data': 'gauge',
 	'Innodb_buffer_pool_pages_dirty': 'gauge',
 	'Innodb_buffer_pool_pages_free': 'gauge',
@@ -110,6 +118,7 @@ MYSQL_STATUS_VARS = {
 	'Key_write_requests': 'counter',
 	'Key_writes': 'counter',
 	'Max_used_connections': 'gauge',
+	'Memory_used': 'gauge',
 	'Open_files': 'gauge',
 	'Open_table_definitions': 'gauge',
 	'Open_tables': 'gauge',
@@ -135,6 +144,7 @@ MYSQL_STATUS_VARS = {
 	'Slow_launch_threads': 'counter',
 	'Slow_queries': 'counter',
 	'Sort_merge_passes': 'counter',
+	'Sort_priority_queue_sorts': 'counter',
 	'Sort_range': 'counter',
 	'Sort_rows': 'counter',
 	'Sort_scan': 'counter',
@@ -149,6 +159,7 @@ MYSQL_STATUS_VARS = {
 	'Threads_connected': 'gauge',
 	'Threads_created': 'counter',
 	'Threads_running': 'gauge',
+	'Update_scan': 'counter',
 	'Uptime': 'gauge',
 	'wsrep_apply_oooe': 'gauge',
 	'wsrep_apply_oool': 'gauge',

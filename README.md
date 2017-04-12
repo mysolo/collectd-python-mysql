@@ -41,6 +41,19 @@ You should then configure the MySQL plugin:
 
 ### MySQL Status
 
+Added 
+
+    status.Connection_errors_accept
+    status.Connection_errors_internal
+    status.Connection_errors_max_connections
+    status.Connection_errors_peer_address
+    status.Connection_errors_select
+    status.Connection_errors_tcpwrap
+    status.Delete_scan
+    status.Memory_used
+    status.Sort_priority_queue_sorts
+    status.Update_scan
+
     status.Com_*
     status.Handler_*
     status.Aborted_clients
